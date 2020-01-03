@@ -12,7 +12,7 @@ class Update extends Component {
     }
 
     componentDidMount = () => {
-        axios.get('http://foodie-list-app-backend.herokuapp.com/list/id/' + this.findID())
+        axios.get('https://foodie-list-app-backend.herokuapp.com/list/id/' + this.findID())
         .then(response => {
             const state = {
                 title: response.data.title,
@@ -66,7 +66,7 @@ class Update extends Component {
             }
         }
         if(this.state.title){
-            axios.put('http://foodie-list-app-backend.herokuapp.com/list/id/' + this.findID(), {...list,items: updatedItems})
+            axios.put('https://foodie-list-app-backend.herokuapp.com/list/id/' + this.findID(), {...list,items: updatedItems})
             .then(() => history.push('/shopping-lists/' + this.findID())) 
         }
     }
@@ -84,11 +84,11 @@ class Update extends Component {
         //if shared, only removes user as to not delete for other users
         if (updatedUsers.length > 0) {
             console.log('removing')
-            axios.put('http://foodie-list-app-backend.herokuapp.com/list/id/' + this.findID(), {...list,users: updatedUsers})
+            axios.put('https://foodie-list-app-backend.herokuapp.com/list/id/' + this.findID(), {...list,users: updatedUsers})
             .then(() => history.push('/shopping-lists/'))
         } else {
             console.log('deleting')
-            axios.delete('http://foodie-list-app-backend.herokuapp.com/list/id/' + this.findID())
+            axios.delete('https://foodie-list-app-backend.herokuapp.com/list/id/' + this.findID())
             .then(() => history.push('/shopping-lists/'))
         }
     }

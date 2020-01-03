@@ -15,7 +15,7 @@ class Login extends Component {
     
     handleLogIn = (e) => {
         e.preventDefault();
-        axios.post('http://foodie-list-app-backend.herokuapp.com/user/login', {
+        axios.post('https://foodie-list-app-backend.herokuapp.com/user/login', {
             username: this.state.username,
             password: this.state.password
         }).then(response => {

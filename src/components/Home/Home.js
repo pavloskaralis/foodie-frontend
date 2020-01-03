@@ -16,7 +16,7 @@ class Home extends Component {
     handleSignUp = (e) => {
         e.preventDefault();
         if(this.state.username && this.state.password){
-            axios.post('http://foodie-list-app-backend.herokuapp.com/user/signup', {
+            axios.post('https://foodie-list-app-backend.herokuapp.com/user/signup', {
                 username: this.state.username,
                 password: this.state.password
             }).then(response => {

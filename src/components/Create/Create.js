@@ -41,7 +41,7 @@ class Show extends Component {
             }
         }
         if(this.state.title){
-            axios.post('http://foodie-list-app-backend.herokuapp.com/list', list)
+            axios.post('https://foodie-list-app-backend.herokuapp.com/list', list)
             .then(() => history.push('/shopping-lists'))
         }
     }

@@ -13,7 +13,7 @@ class Index extends Component {
     }
     
     componentDidMount = () => {
-        axios.get('http://foodie-list-app-backend.herokuapp.com/list/user/' + this.state.username)
+        axios.get('https://foodie-list-app-backend.herokuapp.com/list/user/' + this.state.username)
         .then(response => this.setState({lists: response.data.lists}));
     }
 
