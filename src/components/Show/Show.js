@@ -10,7 +10,7 @@ class Show extends Component {
     }
 
     componentDidMount = () => {
-        axios.get('https://foodie.sfo2.digitaloceanspaces.com/list/id/' + this.findID())
+        axios.get('http://foodie-list-app-backend.herokuapp.com/list/id/' + this.findID())
         .then(response => this.setState({
             title: response.data.title,
             users: response.data.users,
@@ -37,7 +37,7 @@ class Show extends Component {
             updatedItem, 
             ...this.state.items.slice(index + 1)
         ];
-        axios.put('https://foodie.sfo2.digitaloceanspaces.com/list/id/' + this.findID(), {...this.state, items: updatedItems})
+        axios.put('http://foodie-list-app-backend.herokuapp.com/list/id/' + this.findID(), {...this.state, items: updatedItems})
         .then(response => this.setState({items:response.data.items}));
     }
 
@@ -47,7 +47,7 @@ class Show extends Component {
             ...this.state.items.slice(0,index), 
             ...this.state.items.slice(index + 1)
         ];
-        axios.put('https://foodie.sfo2.digitaloceanspaces.com/list/id/' + this.findID(), {...this.state,items: updatedItems})
+        axios.put('http://foodie-list-app-backend.herokuapp.com/list/id/' + this.findID(), {...this.state,items: updatedItems})
         .then(response => this.setState({items:response.data.items}));
     }
 

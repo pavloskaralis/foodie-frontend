@@ -22,7 +22,7 @@ class App extends Component {
 
   componentDidMount = () => {
     if(localStorage.token) {
-      axios.get('https://foodie.sfo2.digitaloceanspaces.com/user/verify/' + localStorage.token)
+      axios.get('http://foodie-list-app-backend.herokuapp.com/user/verify/' + localStorage.token)
       .then(response => this.setState({
         isLoggedIn: true, 
         username: response.data.username, 

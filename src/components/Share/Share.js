@@ -13,7 +13,7 @@ class Share extends Component {
     } 
 
     componentDidMount = () => {
-        axios.get('https://foodie.sfo2.digitaloceanspaces.com/list/id/' + this.findID())
+        axios.get('http://foodie-list-app-backend.herokuapp.com/list/id/' + this.findID())
         .then(response => this.setState({
             title: response.data.title,
             users: response.data.users,
@@ -45,11 +45,11 @@ class Share extends Component {
                 result: 'User already added.'
             }); 
         } else {
-            axios.get('https://foodie.sfo2.digitaloceanspaces.com/user/share/' + this.state.username)
+            axios.get('http://foodie-list-app-backend.herokuapp.com/user/share/' + this.state.username)
             .then(response => {
                 if (response.data.confirm){
                     const updatedUsers = [...list.users, this.state.username];
-                    axios.put('https://foodie.sfo2.digitaloceanspaces.com/list/id/' + this.findID(), {...list, users: updatedUsers})
+                    axios.put('http://foodie-list-app-backend.herokuapp.com/list/id/' + this.findID(), {...list, users: updatedUsers})
                     .then(response => this.setState({
                         users: response.data.users,
                         username: '',
