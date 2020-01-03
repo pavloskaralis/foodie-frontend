@@ -15,7 +15,7 @@ class Login extends Component {
     
     handleLogIn = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/user/login', {
+        axios.post('https://foodie.sfo2.digitaloceanspaces.com/user/login', {
             username: this.state.username,
             password: this.state.password
         }).then(response => {

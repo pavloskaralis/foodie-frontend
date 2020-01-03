@@ -41,7 +41,7 @@ class Show extends Component {
             }
         }
         if(this.state.title){
-            axios.post('http://localhost:3001/list', list)
+            axios.post('https://foodie.sfo2.digitaloceanspaces.com/list', list)
             .then(() => history.push('/shopping-lists'))
         }
     }
