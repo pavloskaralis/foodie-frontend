@@ -1,0 +1,21 @@
+.footerDiv{
+    background-image:url(https://i.imgur.com/K9JXwBU.jpg), center;
+    min-height:100%;
+    border-top: gray .5px solid;
+    padding: 40px 0; 
+    margin: 30px 30px 0 30px;
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    justify-items: start;
+    
+}
+.footer{
+    color:var(--green); 
+    padding: 0 0 0 20px; 
+    font-family: 'Didact Gothic', sans-serif;
+}
+.footer:hover{
+    color: var(--blue);
+    animation: ease-in;
+}

@@ -1,0 +1,20 @@
+.descriptionCreate{
+    
+        font-family: 'Didact Gothic', sans-serif;
+        padding: 0px 50px 50px 50px; 
+        font-size: 21px;
+    }
+.plus{
+    color: var(--green);
+    font-family: 'Bungee Inline', cursive;
+    font-size: 40px;
+    padding: 20px 0 0 0; 
+    cursor: pointer;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.plus:hover{
+    color: var(--red);
+}
+

@@ -1,0 +1,40 @@
+.header1{
+    font-size: 30px;
+    font-family: 'Bungee Inline', cursive;
+    color: var(--red);
+    padding: 50px; 
+}
+.description{
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 50px; 
+    font-size: 21px;
+
+}
+.container2{
+    margin: 50px 100px 50px 100px; 
+    display: grid;
+    grid-template-rows: auto; 
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;  
+}
+.newPost{
+    color: white; 
+}
+.newPost:hover{
+    color:white;
+    font-family: 'Didact Gothic', sans-serif;
+}
+#listItems1{
+    color: var(--blue);
+    font-family: 'Bungee Inline', cursive;
+    font-size: 25px;
+    opacity: 100%;
+    padding: 25px;
+    border: gray .5px solid;
+    text-align: center;
+}
+#listItems1:hover {
+    background-color:var(--green);
+    color: white; 
+
+}

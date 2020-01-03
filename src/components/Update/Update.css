@@ -1,0 +1,39 @@
+.button1{
+    width: 150px;
+}
+.button2{
+    width: 150px;
+    background-color: var(--red);
+}
+
+.plus{
+    font-family: 'Bungee Inline', cursive;
+    font-size: 50px;
+    padding: 20px 0 0 0; 
+    cursor: pointer;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.plus:hover{
+    color: var(--red);
+}
+
+.container4{
+    display: grid;
+    padding-bottom: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    font-family: 'Bungee Inline', cursive;
+    color: white;
+    padding: 0 50px 50px 50px;
+}
+.return{
+    padding: 10px;
+    color: gray;
+}
+.return:hover{
+    background-color: var(--red);
+    color: white;
+}

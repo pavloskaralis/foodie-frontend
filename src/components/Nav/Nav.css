@@ -1,0 +1,23 @@
+
+
+.containerNav{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 15px;
+    align-items:center; 
+    border-bottom: gray .5px solid;
+    padding-bottom: 10px;
+}
+.avocado {
+    width: 100px; 
+    justify-self: start;
+ }
+.links{
+    color: var(--green);
+    font-family: 'Didact Gothic', sans-serif;
+}
+.links:hover{
+    color: var(--blue);
+}
+

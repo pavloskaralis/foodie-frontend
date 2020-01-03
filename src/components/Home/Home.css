@@ -1,0 +1,102 @@
+:root {
+    --green: #3db3ac;
+    --red: #ff1660f5;
+    --blue: #053aa6;
+    --daisy: #fbff14;
+    --purple: #a46aa0;
+    --teal: #014969;
+    
+
+}
+body {
+    margin: 0; 
+}
+
+div {
+    text-align: center;
+}
+
+.description2{
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 50px; 
+    font-size: 21px;
+}
+.title {
+    font-size: 30px;
+    font-family: 'Bungee Inline', cursive;
+    color:var(--red);
+    margin: 50px;
+}
+
+.container{
+    background-color: var(--green);
+    display: grid;
+    padding: 50px;
+    width: auto;
+  
+    max-width: 2000px;
+   
+    
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.apple, .birthday, .share{
+    height: 100px;
+    width: auto;
+    filter: var(--blue);
+    padding: 15px;
+}
+.info{
+    color: white;
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 10px;
+    font-size: 21px;
+    text-align: left
+
+
+}
+.registration{
+    color: var(--red);
+    font-family: 'Bungee Inline', cursive;
+    font-size: 25px;
+    padding: 30px 0 30px 0; 
+  
+
+}
+.form-group{
+    margin: 0 auto;
+    width:45%;
+    padding: 15px;
+}
+button{
+    background-color: var(--blue);
+    color: white;
+    font-family: 'Didact Gothic', sans-serif;
+    border: none;
+    padding: 10px;
+    margin: 30px 15px 30px 15px;
+}
+
+.ifMember{
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 20px 0 30px 0; 
+}
+.click {
+    color: var(--red);
+}
+.click:hover{
+    color: var(--blue);
+}
+#signup{
+    background-image: url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60);
+    background-position-x: center;
+    background-size: 1200px; 
+    background-repeat: no-repeat;
+}
+
+
+.invis {
+    opacity: 0;
+}
