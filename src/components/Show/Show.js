@@ -59,7 +59,7 @@ class Show extends Component {
                     <div className='descriptionCreate'>
                         You can manage your list here. <br/>
                         If you want to cross out an item use <span>✓</span> <br/>
-                        If you need to delete an item use <span>x</span>
+                        If you need to delete an item use <span>X</span>
                     </div>
                 </div>
 
