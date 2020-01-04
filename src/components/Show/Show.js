@@ -10,6 +10,7 @@ class Show extends Component {
     }
 
     componentDidMount = () => {
+        window.scrollTo(0, 0);
         axios.get('https://foodie-list-app-backend.herokuapp.com/list/id/' + this.findID())
         .then(response => this.setState({
             title: response.data.title,
@@ -58,7 +59,7 @@ class Show extends Component {
                     <div className='header1'>{this.state.title}</div>
                     <div className='descriptionCreate'>
                         You can manage your list here. <br/>
-                        If you want to cross out an item use <span>✓</span> <br/>
+                        If you want to check off an item use <span>✓</span> <br/>
                         If you need to delete an item use <span>X</span>
                     </div>
                 </div>
