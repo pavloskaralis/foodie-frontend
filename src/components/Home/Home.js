@@ -84,7 +84,7 @@ class Home extends Component {
             <div>
             <div className='description2'>
             You're running to the store after work but realize you left your list at home (ugh). <br></br>
-            Instead of standing in the dairy aisle wondering how much milk you have left, next time use your phone as your personal grocery shopping assistant.<br></br> The newest and latest grocery shopping list apps take out all the work for you.
+            Instead of standing in the dairy aisle wondering how much milk you have left, next time use your phone as your personal grocery shopping assistant.<br></br> The newest and latest grocery shopping list app take out all the work for you.
                 </div>
                 
             </div>
