@@ -44,6 +44,5 @@
     color: white;
 }
 .strike{
-    color: var(--red);
-    opacity: .5;
+    color: var(--daisy);
 }
