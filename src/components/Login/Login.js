@@ -42,7 +42,7 @@ class Login extends Component {
                     <input type="text" className='form-control' value={this.state.username} onChange={this.handleInput} placeholder="username" id="username"/>
                     </div>
                     <div className='form-group'>
-                    <input type="text" className='form-control' value={this.state.password} onChange={this.handleInput} placeholder="password" id="password"/>
+                    <input type="password" className='form-control' value={this.state.password} onChange={this.handleInput} placeholder="password" id="password"/>
                     </div>
                     <button type="submit">LOG IN</button> 
                     {this.state.error ? <div>Invalid username or password.</div> : <div className="invis">Invisible text</div>}
