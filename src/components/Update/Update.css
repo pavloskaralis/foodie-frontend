@@ -37,3 +37,8 @@
     background-color: var(--red);
     color: white;
 }
+
+input[type=text] {
+    padding: 8px;
+    margin: 2px;
+}

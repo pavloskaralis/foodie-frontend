@@ -46,3 +46,8 @@
 .strike{
     color: var(--daisy);
 }
+
+input[type=text] {
+    padding: 8px;
+    margin: 2px;
+}
