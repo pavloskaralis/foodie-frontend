@@ -47,13 +47,18 @@ class App extends Component {
       <React.Fragment>
         <Nav isLoggedIn={this.state.isLoggedIn} handleLogOut={this.handleLogOut}/>        
         <Switch>
-          {this.state.isLoggedIn && <Route path={'/shopping-lists/:id'} render={()=> <Show listID={this.state.listID}/>}/>}
-          {this.state.isLoggedIn && <Route path={'/shopping-lists'} render={()=> <Index selectList={this.selectList} username={this.state.username}/>}/>}
-          {this.state.isLoggedIn && <Route path={'/new-list'} render={()=> <Create username={this.state.username}/>}/>}
-          {this.state.isLoggedIn && <Route path={'/update-list/:id'} render={()=> <Update username={this.state.username}/>}/>}
-          {this.state.isLoggedIn && <Route path={'/share-list/:id'} render={()=> <Share username={this.state.username}/>}/>}
-          {!this.state.isLoggedIn && <Route path={'/login'} render={()=> <Login resetApp={this.componentDidMount}/>}/>}
-          <Route path={'/'} render={()=> <Home resetApp={this.componentDidMount} handleSignUp={this.handleSignUp} isLoggedIn={this.state.isLoggedIn}/>}/>
+          {this.state.isLoggedIn && <>
+            <Route path={'/shopping-lists/:id'} render={()=> <Show listID={this.state.listID}/>}/>
+            <Route path={'/shopping-lists'} render={()=> <Index selectList={this.selectList} username={this.state.username}/>}/>
+            <Route path={'/new-list'} render={()=> <Create username={this.state.username}/>}/>
+            <Route path={'/update-list/:id'} render={()=> <Update username={this.state.username}/>}/>
+            <Route path={'/share-list/:id'} render={()=> <Share username={this.state.username}/>}/>
+            <Route path={'/'} exact render={()=> <Home resetApp={this.componentDidMount} handleSignUp={this.handleSignUp} isLoggedIn={this.state.isLoggedIn}/>}/>
+          </>}
+          {!this.state.isLoggedIn && <>
+            <Route path={'/login'} render={()=> <Login resetApp={this.componentDidMount}/>}/>
+            <Route path={'/'} exact render={()=> <Home resetApp={this.componentDidMount} handleSignUp={this.handleSignUp} isLoggedIn={this.state.isLoggedIn}/>}/>
+          </>}
         </Switch>
         <Footer isLoggedIn={this.state.isLoggedIn} handleLogOut={this.handleLogOut}/>        
       </React.Fragment>            
